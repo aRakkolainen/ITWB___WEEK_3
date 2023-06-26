@@ -1,0 +1,37 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
+
+td {
+  padding: 6px;
+  border-bottom: 1px solid;
+}
+tr:nth-child(1n) {
+  background: #ffffff;
+}
+tr:nth-child(2n) {
+  background: #f2f2f2;
+}
+
+th {
+  background: #b7d0ff;
+  font-weight: bold;
+  padding: 12px 0px 12px 6px;
+  border-bottom: 2px solid gray;
+}
+#populations_of_municipalities {
+  border-collapse: collapse;
+  font-size: 16px;
+  text-align: left;
+  table-layout: fixed;
+  width: 100%;
+}
+
+div.center {
+  margin: auto;
+  padding: 60px;
+  width: 60%;
+}
+h1 {
+  text-align: center;
+}
