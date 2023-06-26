@@ -8,16 +8,10 @@ const populateWithData = async () => {
   const tableHead = document.createElement("thead");
   const thMunicipality = document.createElement("th");
   const thPopulation = document.createElement("th");
-  const thEmploymentAmount = document.createElement("th");
-  const thEmploymentRate = document.createElement("th");
   thMunicipality.innerText = "Municipality";
   thPopulation.innerText = "Population";
-  thEmploymentAmount.innerText = "Employment amount";
-  thEmploymentRate.innerText = "Employment rate %";
   tableHead.appendChild(thMunicipality);
   tableHead.appendChild(thPopulation);
-  tableHead.appendChild(thEmploymentAmount);
-  tableHead.appendChild(thEmploymentRate);
 
   const tableBody = document.createElement("tbody");
   myNewTable.appendChild(tableHead);
@@ -43,6 +37,12 @@ const populateWithData = async () => {
   //console.log(employmentJSON)
   const employmentAmounts = employmentJSON.dataset.value;
   //const myTable = document.getElementById("populations_of_municipalities");
+  const thEmploymentAmount = document.createElement("th");
+  const thEmploymentRate = document.createElement("th");
+  thEmploymentAmount.innerText = "Employment amount";
+  thEmploymentRate.innerText = "Employment rate %";
+  tableHead.appendChild(thEmploymentAmount);
+  tableHead.appendChild(thEmploymentRate);
   for (let i = 0; i < municipalities.length; i++) {
     let newRow = document.createElement("tr");
     let newMunicipalityCell = document.createElement("td");
@@ -66,6 +66,7 @@ const populateWithData = async () => {
     newRow.appendChild(newEmploymentCell);
     newRow.appendChild(newEmploymentRateCell);
     tableBody.appendChild(newRow);
+    myNewTable.appendChild(tableHead);
     myNewTable.appendChild(tableBody);
   }
 };
