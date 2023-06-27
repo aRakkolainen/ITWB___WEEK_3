@@ -39,8 +39,8 @@ const populateWithData = async () => {
   //const myTable = document.getElementById("populations_of_municipalities");
   const thEmploymentAmount = document.createElement("th");
   const thEmploymentRate = document.createElement("th");
-  thEmploymentAmount.innerText = "Employment amount";
-  thEmploymentRate.innerText = "Employment rate %";
+  thEmploymentAmount.innerText = "Employment";
+  thEmploymentRate.innerText = "Employment-%";
   tableHead.appendChild(thEmploymentAmount);
   tableHead.appendChild(thEmploymentRate);
   for (let i = 0; i < municipalities.length; i++) {
