@@ -4,7 +4,7 @@ body {
 
 td {
   padding: 6px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid rgb(128, 128, 128);
 }
 tr:nth-child(1n) {
   background: #ffffff;
