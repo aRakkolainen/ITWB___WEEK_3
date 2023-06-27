@@ -12,10 +12,7 @@ const populateWithData = async () => {
   thPopulation.innerText = "Population";
   tableHead.appendChild(thMunicipality);
   tableHead.appendChild(thPopulation);
-
   const tableBody = document.createElement("tbody");
-  myNewTable.appendChild(tableHead);
-
   const myDiv = document.getElementById("center");
   myDiv.appendChild(myNewTable);
   const url =
